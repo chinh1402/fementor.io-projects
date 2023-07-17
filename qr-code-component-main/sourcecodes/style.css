@@ -68,11 +68,12 @@ html {
 
     .headline {
         font-size: 22px;
-        line-height: 24px;
+        line-height: 28px;
     }
 
     .description {
         font-size: 15px;
         margin-top: 20px;
+        line-height: 18px;
     }
 }
