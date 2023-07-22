@@ -181,25 +181,25 @@ html {
     }
 
     &__row-item-1 {
-        background-color: hsla(0, 100%, 67%, 0.1);
+        background-color: hsla(0, 100%, 67%, 0.05);
         color: $LightRed;
         outline: var(--t) solid hsla(0, 100%, 67%, 0.2); 
     }
 
     &__row-item-2 {
-        background-color: hsla(39, 100%, 56%, 0.1);
+        background-color: hsla(39, 100%, 56%, 0.05);
         color: $OrangeyYellow;
         outline: var(--t) solid hsla(39, 100%, 56%, 0.2);
     }
 
     &__row-item-3 {
-        background-color: hsla(166, 100%, 37%, 0.1);
+        background-color: hsla(166, 100%, 37%, 0.05);
         color: $GreenTeal;
         outline: var(--t) solid hsla(166, 100%, 37%, 0.2);
     }
 
     &__row-item-4 {
-        background-color:  hsla(234, 85%, 45%, 0.1);
+        background-color:  hsla(234, 85%, 45%, 0.05);
         color: $CobaltBlue;
         outline: var(--t) solid hsla(234, 85%, 45%, 0.2);
     }
