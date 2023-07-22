@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "HankenGrotesk";
+  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+html {
+  font-size: 62.5%;
+  font-family: "HankenGrotesk";
+  box-sizing: border-box;
+  line-height: 1.8rem;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+}
+
+.modal-wrapper {
+  display: flex;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 32px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  max-width: 720px;
+}
+
+.modal-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 32px;
+  padding: 48px 20px;
+}
+.modal-left__headline {
+  font-size: 2.4rem;
+  color: hsl(241, 100%, 89%);
+  font-weight: 600;
+}
+.modal-left__result-score {
+  margin-top: 40px;
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal-left__current-score {
+  font-size: 7rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  margin-top: 20px;
+}
+.modal-left__score {
+  font-size: 1.6rem;
+  color: hsla(241, 100%, 89%, 0.6);
+  margin-top: 32px;
+}
+.modal-left__result-compliment {
+  margin-top: 40px;
+  color: hsl(0, 0%, 100%);
+  font-size: 3rem;
+  font-weight: 500;
+}
+.modal-left__result-description {
+  margin-top: 24px;
+  color: hsl(241, 100%, 89%);
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: 400;
+  line-height: 2.2rem;
+  padding: 0 32px;
+}
+
+.modal-right {
+  flex: 1;
+  padding: 28px 32px 48px 32px;
+}
+.modal-right__headline {
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  color: hsl(224, 30%, 27%);
+}
+.modal-right__column {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 36px;
+}
+.modal-right__row {
+  height: 52px;
+  background-color: #ccc;
+  margin: 16px 0;
+  padding: 0 20px;
+  border-radius: 12px;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-right__row-item-icon {
+  position: relative;
+  top: 4px;
+  margin-right: 12px;
+}
+.modal-right__row-item-left {
+  font-weight: 600;
+}
+.modal-right__row-item-right {
+  color: hsl(224, 30%, 27%);
+}
+.modal-right__row-score--bold {
+  font-weight: 800;
+  margin-right: 4px;
+  opacity: 1;
+}
+.modal-right__row-score--100 {
+  opacity: 0.7;
+}
+.modal-right__row-item-1 {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+.modal-right__row-item-2 {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+.modal-right__row-item-3 {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+}
+.modal-right__row-item-4 {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+}
+.modal-right__next-btn {
+  background-color: hsl(224, 30%, 27%);
+  height: 60px;
+  color: hsl(0, 0%, 100%);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 40px;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.modal-right__next-btn:active {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+/*# sourceMappingURL=style.css.map */

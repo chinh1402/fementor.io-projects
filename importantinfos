@@ -1,0 +1,27 @@
+How to use ttf (tutorial: https://www.youtube.com/watch?v=0fVymQ7SZw0 )
+
+Workflow: turn ttf to woff2, then use @font-face in css
+
+1. Turn ttf to woff2: https://everythingfonts.com/ttf-to-woff2 (optimal file size should be < 4 small static font file ~ 130 Kb)
+2. Copy these line of code in your css:
+    @font-face {
+        font-family: "fontName";
+        src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.woff2") format("woff2");
+        font-weight: 100 900; // font-weight ranges
+        font-display: swap;
+    }
+
+(tbh, I don't understand any of these codes, but one can be sure that the font-weight should be taken from this site by dragging your .woff file: https://wakamaifondue.com/)
+
+3. Use it like usual (font-family whenever needed)
+
+==================================================
+
+Watch for changes in scss file
+sass --watch style.scss style.css
+
+==================================================
+
+Color borders:
+
+https://codepen.io/nguyn-ch-nh-the-bold/pen/abQjvXM
