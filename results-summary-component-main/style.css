@@ -69,17 +69,17 @@ html {
 .modal-left__result-compliment {
   margin-top: 40px;
   color: hsl(0, 0%, 100%);
-  font-size: 3rem;
-  font-weight: 600;
+  font-size: 3.2rem;
+  font-weight: 800;
 }
 .modal-left__result-description {
   margin-top: 24px;
   color: hsl(241, 100%, 89%);
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   text-align: center;
   font-weight: 500;
   line-height: 2.2rem;
-  padding: 0 32px;
+  padding: 0 30px;
 }
 
 .modal-right {
