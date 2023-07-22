@@ -1,0 +1,8 @@
+I copied code from this site for the border:
+https://css-tip.com/corner-only-border-image/
+
+They are using outline + outline-offset + webkit-mask to give color for rounded corners
+
+It's not supported in every browsers, so it is not suggested to use webkit-mask, but for the answer of this segment, I'll use it regardless
+
+There's a way using pseudo elements, but I got too lazy to do it, so here's the results

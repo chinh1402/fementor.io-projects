@@ -23,7 +23,6 @@ $PaleBlue: hsl(221, 100%, 96%);
 $LightLavender: hsl(241, 100%, 89%);
 $DarkGrayBlue: hsl(224, 30%, 27%);
 
-
 html {
     font-size: 62.5%;
     font-family: 'HankenGrotesk';
@@ -128,13 +127,32 @@ html {
         height: 52px;
         background-color: #ccc;
         margin: 16px 0;
-        padding: 0 20px;
         border-radius: 12px;
         font-size: 1.8rem;
+
+        --s: 8px; /* the size on the corner */
+        --t: 1px;  /* the thickness of the border */
+        --g: 0px; /* the gap between the border and image */
+        --r: 12px;
+
+        padding: calc(var(--g) + var(--t));
+        /*  outline by default overlap padding prop  */
+        outline-offset: calc(-1*var(--t));
+        -webkit-mask:
+            conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
+            0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+            linear-gradient(#000 0 0) content-box;
+        transition: .4s;
+        cursor: pointer;
+        border-radius: var(--r);
+    }
+
+    &__row-wrapper {
+        height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+        padding: 0 20px;
     }
     &__row-item-icon {
         position: relative;
@@ -164,21 +182,25 @@ html {
     &__row-item-1 {
         background-color: hsla(0, 100%, 67%, 0.1);
         color: $LightRed;
+        outline: var(--t) solid hsla(0, 100%, 67%, 0.2); 
     }
 
     &__row-item-2 {
         background-color: hsla(39, 100%, 56%, 0.1);
-        color: $OrangeyYellow
+        color: $OrangeyYellow;
+        outline: var(--t) solid hsla(39, 100%, 56%, 0.2);
     }
 
     &__row-item-3 {
         background-color: hsla(166, 100%, 37%, 0.1);
         color: $GreenTeal;
+        outline: var(--t) solid hsla(166, 100%, 37%, 0.2);
     }
 
     &__row-item-4 {
         background-color:  hsla(234, 85%, 45%, 0.1);
         color: $CobaltBlue;
+        outline: var(--t) solid hsla(234, 85%, 45%, 0.2);
     }
 
     &__next-btn {
@@ -195,9 +217,59 @@ html {
         width: 100%;
         outline: none;
         border: none;
+        cursor: pointer;
         &:active {
             background-image: linear-gradient($LightSlateBlueBG, $LightRoyalBlueBG);
         }
     }
 }
 
+@media (max-width: 375px) {
+    .modal-wrapper {
+        flex-direction: column;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .modal-left {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding-top: 28px;
+        &__headline{
+            font-size: 2rem;
+        }
+
+        &__result-score {
+            height: 160px;
+            width: 160px;
+        }
+
+        &__result-compliment {
+            font-size: 2.8rem;
+        }
+
+        &__current-score {
+            font-size: 6rem;
+        }
+
+        &__result-description {
+            font-size: 1.6rem;
+        }
+    }
+
+    .modal-right {
+        &__headline {
+            font-size: 2rem;
+            line-height: 2.4rem;
+            color: hsl(224, 30%, 27%);
+            margin: 0;
+        }
+        &__column {
+            margin-top: 20px;
+        }
+
+        &__next-btn {
+            margin-top: 28px;
+        }
+    }
+}
