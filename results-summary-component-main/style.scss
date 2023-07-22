@@ -45,7 +45,7 @@ html {
     margin: auto;
     background-color: #fff;
     border-radius: 32px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     max-width: 720px;
 }
 
@@ -62,6 +62,7 @@ html {
         font-size: 2.4rem;
         color: $LightLavender;
         font-weight: 600;
+        
     }
 
     &__result-score {
@@ -94,7 +95,7 @@ html {
         margin-top: 40px;
         color: $White;
         font-size: 3rem;
-        font-weight: 500;
+        font-weight: 600;
     }
 
     &__result-description {
@@ -102,7 +103,7 @@ html {
         color: $LightLavender;
         font-size: 1.7rem;
         text-align: center;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 2.2rem;
         padding: 0 32px;
     }
@@ -212,7 +213,7 @@ html {
         justify-content: center;
         align-items: center;
         font-size: 1.8rem;
-        font-weight: 600;
+        font-weight: 700;
         margin-top: 40px;
         width: 100%;
         outline: none;
