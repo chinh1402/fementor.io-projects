@@ -1,0 +1,186 @@
+@import 'normalize.css';
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+}
+
+/* - Dark Slate Grey: hsl(234, 29%, 20%)
+- Charcoal Grey: hsl(235, 18%, 26%)
+- Grey: hsl(231, 7%, 60%)
+- White: hsl(0, 0%, 100%) */
+
+/* Subcribe card */
+
+.dark-wrapper {
+    width: 1440px;
+    height: 1080px;
+    background-color: hsl(235, 18%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {   
+    color: hsl(234, 29%, 20%);
+    margin-top: -2px;
+    background-color: #fff;
+    width: 880px;
+    padding: 24px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 36px;
+    box-shadow: 10px 12px 30px 0px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 10px 12px 30px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: 10px 12px 30px 0px rgba(0,0,0,0.21);
+}
+
+.card.hidden {
+    display: none;
+}
+
+.card-left {
+    padding: 40px 64px 40px 40px;
+}
+
+.card-left__headline {
+    margin: 0;
+    font-size: 5.6rem;
+    line-height: 5.6rem;
+}
+
+.card-left__description {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-top: 24px;
+}
+
+.card-left__list {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 25px;
+}
+
+.card-left__list-item {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    margin: 13px 0;
+}
+
+.itemIcon {
+    margin-right: 16px;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 44px;
+    position: relative;
+}
+
+.input-label {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.form__email-input {
+    margin-top: 8px;
+    padding: 18px 24px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid hsl(231, 7%, 60%);
+    font-size: 1.6rem;
+}
+
+.form__email-input.invalid {
+    background-color: hsl(4, 100%, 67%, 0.15);
+    color: hsl(4, 100%, 67%);
+    border: 1px solid hsl(4, 100%, 67%, 0.9);
+}
+
+.form__email-input.invalid::placeholder{
+    color: hsl(4, 100%, 67%);
+}
+
+.form__submitBtn {
+    color: #fff;
+    background-color: hsl(234, 29%, 20%);
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-size: 1.6rem;
+    padding: 19px;
+    margin-top: 24px;
+    font-weight: 700;
+}
+
+.form__submitBtn:hover {
+    background-color: hsl(4, 100%, 67%);
+    cursor: pointer;
+}
+
+.invalid-text {
+    position: absolute;
+    right: 0;
+    color: hsl(4, 100%, 67%);
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: none;
+}
+
+.invalid-text.show {
+    display: block;
+}
+
+.illustration-img-desktop {
+    width: 401px;
+    height: fit-content;
+    display: block;
+}
+/* Success card */
+
+.success-card {
+    background-color: #fff;
+    width: 384px;
+    border-radius: 36px;
+    padding: 60px;
+}
+
+.success-card.hidden {
+    display: none;
+}
+
+.success-headline {
+    font-size: 5.6rem;
+    line-height: 5.6rem;
+    color: hsl(235, 18%, 26%);
+    margin: 32px 0 0 0 ;
+}
+
+.success-description {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: hsl(235, 18%, 26%);
+    margin-top: 24px;
+}
+
+.success-button {
+    margin-top: 20px;
+    background-color: hsl(234, 29%, 20%) ;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.success-button:hover {
+    background-color: hsl(4, 100%, 67%);
+    cursor: pointer;
+    font-weight: 700;
+}

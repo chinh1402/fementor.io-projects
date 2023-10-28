@@ -1,0 +1,12 @@
+expected deadline 25/10 - 28/10 = 3 hrs
+pixel perfect? Yes
+
+Idea: use setState to submitted / setSubmitted, don't have to use form due to how simple this design is. 
+
+Ideal plan: Make both of the UI, each one has its own component, let the page render each of them. Use submitted / setSubmitted to re-render
+
+Steps:
+0. Measure the UIs
+1. Make both UI
+2. Each one has its own component, so create 2 components, render each accordingly
+3. use submitted / setSubmitted to re-render

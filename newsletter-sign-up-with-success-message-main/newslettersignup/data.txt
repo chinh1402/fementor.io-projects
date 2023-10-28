@@ -1,0 +1,10 @@
+scale 1, 
+background: width: 1440px, height: 1080px
+
+Stay updated! card 
+width: 880px;
+height: 640px;
+
+Success card:
+width: 504px;
+height: 520ox;

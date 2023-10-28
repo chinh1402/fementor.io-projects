@@ -1,0 +1,15 @@
+0. use npm i normalize.css
+1. setup css files: responsive.css, grid.css (link all of them in the parents layout file)
+1.01. Default setup on globals.css:
+
+@import 'normalize.css';
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+}
+
+2. Font setup using next (next has built in fonts from google api)
+3. keyword: normalize files (on messenger)
+4. Move all assets files into public
